@@ -60,12 +60,27 @@
 
     <!-- Height -->
     <com.google.android.material.card.MaterialCardView
+        style="?attr/materialCardViewElevatedStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         app:cardElevation="8dp"
         app:cardCornerRadius="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+
+                android:text="Height">
+
+            </TextView>
+        </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 
     <Button android:id="@+id/btnCalc"
