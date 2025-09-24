@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Calculadora_IMC_V3</string>
+
+
 </resources>
+
+
+<!--
+
+    UNDERWEIGHT,
+    NORMAL_WEIGHT,
+    OVERWEIGHT,
+    OBESITY,
+    EXTREME_OBESITY
+-->

@@ -71,15 +71,68 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="16dp">
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
+                android:textSize="18sp"
+                android:text="Height"/>
+            <TextView
+                android:id="@+id/tvHeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:text="170 cm"/>
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliHeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:valueFrom="40"
+                android:valueTo="240"
+                android:value="170"
+                android:stepSize="1"
+                app:tickVisible="false"
+                app:labelBehavior="gone"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
 
-                android:text="Height">
+    <!-- Height -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="8dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="16dp"
+        style="?attr/materialCardViewElevatedStyle">
 
-            </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/tvResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="64sp"
+                android:textStyle="bold"
+                android:text=""
+                tools:text = "0.0"/>
+            <TextView
+                android:id="@+id/tvResultDescr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:text=""
+                tools:text="Description"/>
+
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 
