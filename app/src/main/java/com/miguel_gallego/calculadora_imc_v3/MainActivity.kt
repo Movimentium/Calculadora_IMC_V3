@@ -77,6 +77,9 @@ class MainActivity : AppCompatActivity() {
             m.calcBMI()
             updateBMIView()
         }
+
+        tvWeight.text = "${m.weight.toInt()} kg"
+        tvHeight.text = "${m.height.toInt()} cm"
     }
 
     fun updateBMIView() {
@@ -84,6 +87,6 @@ class MainActivity : AppCompatActivity() {
         tvResult.setTextColor(bmiColor)
         tvResult.text = m.bmiFormatted()
         tvResultDescr.setTextColor(bmiColor)
-        tvResultDescr.text = m.strBMICategory()
+        tvResultDescr.setText(m.strBMICategory()) // set a Int of Resources
     }
 }

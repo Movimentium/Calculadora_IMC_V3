@@ -1,5 +1,15 @@
 <resources>
-    <string name="app_name">Calculadora_IMC_V3</string>
+    <string name="app_name">BMI Calc</string>
+
+    <string name="lbl_weight">Weight</string>
+    <string name="lbl_height">Height</string>
+    <string name="btn_calc">Calculate BMI</string>
+
+    <string name="bmi_underweight">Underweight</string>
+    <string name="bmi_normal_weight">Normal weight</string>
+    <string name="bmi_overweight">Overweight</string>
+    <string name="bmi_obesity">Obesity</string>
+    <string name="bmi_extreme_obesity">Extreme obesity</string>
 
 
 </resources>

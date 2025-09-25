@@ -34,9 +34,14 @@ enum class BMICategory {
          Log.i("MMM", idColor.toString())
      }
 
-     fun strBMICategory(): String {
-         // TODO: Localize this!!!
-         return bmiCategory.toString()
+     fun strBMICategory(): Int {
+         when (bmiCategory) {
+             BMICategory.UNDERWEIGHT -> return R.string.bmi_underweight
+             BMICategory.NORMAL_WEIGHT -> return R.string.bmi_normal_weight
+             BMICategory.OVERWEIGHT -> return R.string.bmi_overweight
+             BMICategory.OBESITY -> return R.string.bmi_obesity
+             BMICategory.EXTREME_OBESITY -> return R.string.bmi_extreme_obesity
+         }
      }
 
      fun bmiFormatted(): String {
